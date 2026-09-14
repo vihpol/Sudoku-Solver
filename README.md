@@ -1,6 +1,7 @@
 ## Sudoku Solver
 
-I implemented my own version of the sudoku solver using recursive backtracking. It traverses from the left most to the right most filling up the numbers. 
+I implemented my own recursive backtracking Sudoku solver. 
+It traverses from left to right, filling in the numbers. 
 
 ## Input
 
@@ -9,8 +10,8 @@ Run the solve.java file
 
 ## Output
 
-See the Solved version on your terminal 
+See the solved version in your terminal 
 
 ## Improvements
 - adding minimum value remaining heuristic to speed up the runtime
-- Adding a GUI to add puzzle more easily 
+- Adding a GUI to add puzzles more easily 
