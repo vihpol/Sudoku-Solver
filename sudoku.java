@@ -4,9 +4,6 @@ import java.io.IOException;
 
 public class sudoku {
 
-    // int[][] puzzle = new int[9][9];
-
-
     public int[][] readFromTxt() {
         int[][] puzzle = new int[9][9];
 
@@ -22,7 +19,7 @@ public class sudoku {
                 for (int i = 0; i < stripped.length(); i++ ) {
                     number = Integer.parseInt(String.valueOf(stripped.charAt(i)));
                     puzzle[count][i] = number;
-                    // System.out.print(puzzle[count][i]);
+                    
                 }
                 count++;
                 

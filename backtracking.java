@@ -1,29 +1,6 @@
 import java.util.ArrayList;
 
-public class sudokusolver {
-    
-    public static void main(String[] args) {
-        sudoku board = new sudoku();
-        
-        
-       int[][] beforeMaze =  new int [9][9];
-        beforeMaze = board.readFromTxt();
-        
-       
-       
-        sudokusolver solver = new sudokusolver();
-        
-        solver.Solve(beforeMaze);
-        
-        
-        for (int i = 0; i < beforeMaze.length; i++) {
-            for (int j = 0; j < beforeMaze[i].length; j++) {
-                System.out.print(beforeMaze[i][j] + " ");
-            }
-            System.out.println();
-        }
-
-    }
+public class backtracking {
 
     public boolean isValid (int row, int column, int value, int[][] board) {
         ArrayList<Integer> nums = new ArrayList<Integer>();
@@ -56,7 +33,7 @@ public class sudokusolver {
 
             }
         }
-        //three squares
+         
         return true;
 
 
